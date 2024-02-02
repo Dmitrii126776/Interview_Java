@@ -1,9 +1,16 @@
 package fibonacci;
 
+import java.util.Scanner;
+
 public class FibonacciWithOutRecursion {
     public static void main(String[] args) {
-        int number = 10;
-        System.out.println(fibonacci(number));
+//        int number = 10;
+//        System.out.println(fibonacci(number));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int number = scanner.nextInt();
+        System.out.println("Fibonacci number is : " + fibonacci(number));
+
     }
 
     public static int fibonacci(int n) {
