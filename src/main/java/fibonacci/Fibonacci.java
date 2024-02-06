@@ -2,7 +2,7 @@ package fibonacci;
 
 import java.util.Scanner;
 
-public class FibonacciWithOutRecursion {
+public class Fibonacci {
     public static void main(String[] args) {
 //        int number = 10;
 //        System.out.println(fibonacci(number));
