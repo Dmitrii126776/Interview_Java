@@ -14,5 +14,22 @@ public class Main {
 
         System.out.println(integerVehicleGenerics.getString());
         //  1 This is Toyota 2020 - 2 This is Mazda 2021 - 3 This is Nissan 2022
+
+        Generics<Integer, String> integerStringGenerics = new Generics<>();
+
+        integerStringGenerics.addToString(1, "One");
+        integerStringGenerics.addToString(2, "Two");
+        integerStringGenerics.addToString(3, "Three");
+
+        System.out.println(integerStringGenerics.getString());
+        // 1 One - 2 Two - 3 Three
+        Generics<String, Integer> stringIntegerGenerics = new Generics<>();
+
+        stringIntegerGenerics.addToString("One", 1);
+        stringIntegerGenerics.addToString("Two", 2);
+        stringIntegerGenerics.addToString("Three", 3);
+
+        System.out.println(stringIntegerGenerics.getString());
+        // One 1 - Two 2 - Three 3
     }
 }
