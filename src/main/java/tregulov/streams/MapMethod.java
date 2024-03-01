@@ -6,6 +6,9 @@ import java.util.stream.Collectors;
 public class MapMethod {
     public static void main(String[] args) {
         int[] array = {5, 9, 3, 8, 1};
+        System.out.println(Arrays.stream(array).sum()); // 26
+        System.out.println(Arrays.stream(array).average().orElse(Double.NaN)); // 5.2
+
         System.out.println(Arrays.toString(array)); // [5, 9, 3, 8, 1]
         int[] numbers = Arrays.stream(array)
                 .map(el -> {
