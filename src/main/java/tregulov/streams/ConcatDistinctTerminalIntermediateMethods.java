@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-// Intermediate methods(lazy) ->  filter map sorted distinct count
-// Terminal methods -> forEach reduce sum collect
+// Intermediate methods(lazy) ->  filter map sorted distinct peek limit skip flatMap mapToInt
+// Terminal methods -> forEach reduce sum collect partitioningBy groupingBy count findFirst min max
 // concat
 public class ConcatDistinctTerminalIntermediateMethods {
     public static void main(String[] args) {
