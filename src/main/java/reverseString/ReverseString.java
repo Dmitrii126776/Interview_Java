@@ -12,10 +12,13 @@ public class ReverseString {
 
     public static String reverseString(String string) {
         StringBuilder reversed = new StringBuilder();
+//        String reversed = "";
         for (int i = string.length() - 1; i >= 0; i--) {
             reversed.append(string.charAt(i));
+//            reversed += string.charAt(i);
         }
         return reversed.toString();
+//        return reversed;
     }
 
     public static String reverseString2(String string) {
